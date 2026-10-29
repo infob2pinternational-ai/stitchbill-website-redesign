@@ -48,3 +48,14 @@ Actual Chrome fixture results: no-JavaScript cards static; simulated reduced-mot
 
 Modified in this follow-up: script.js, styles.css, measurement.html, REVIEW.md. Test fixture retained outside dist. No external writes or deployment.
 Keyboard verification: Enter on the motion control toggled between Pause and Play with matching aria-pressed state in the actual homepage DOM.
+
+## Reference-inspired business presentation — 29 October 2026
+
+Local-only design revision following the user's WA Sender, AiSensy and TeleCMI references. Researched their public homepage structure: direct product introduction, demo actions, clear journeys and grouped product/use-case sections. No competitor claims, customer logos, integration badges, pricing or assets were copied.
+
+Changed to stronger sans-serif headings, clearer product navigation, paired hero actions, a rounded concept workspace, retailer chips and grouped cards with cream/white backgrounds. Added native mobile navigation that works without JavaScript. The existing eight-second card animation, slogans, burgundy palette, WhatsApp destinations and feature-status disclosures remain.
+
+Added business.css as a separate presentation layer; modified index.html and stylesheet links in privacy.html, terms.html and measurement.html. Prior homepage and styling saved under checkpoints/editorial-approved. No application dependencies or product functionality added.
+
+Static checks passed: JS syntax; internal links and file references; unique IDs; one H1 per page; structured JSON; homepage metadata unchanged except the presentation stylesheet link; original robots.txt and sitemap.xml remain byte-identical. Native OS reduced-motion, other browsers, real devices and Lighthouse remain unverified. Previous privacy/product verification outstanding items still apply.
+Browser pass: Chrome iframe widths 320, 390, 768, 820, 1024 and 1280 passed no-horizontal-overflow, card containment, non-overlap, pause state, control containment and navigation-target checks after fixing phone/small-desktop spacing. A visible animation loop iteration was observed. Mobile menu visibility correctly follows the 800px breakpoint; tests use iframe layouts, not physical devices.
